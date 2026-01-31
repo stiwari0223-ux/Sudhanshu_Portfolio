@@ -10,17 +10,17 @@ import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
   "React",
+  "C",
+  "C++",
+  "Python",
   "JavaScript",
-  "TypeScript",
   "Node.js",
   "Numpy",
   "Pandas",
   "Matplotlib",
-  "AWS",
   "Tailwind CSS",
   "Figma",
   "Git",
-  "GitHub Actions",
 ];
 
 
@@ -32,7 +32,7 @@ export const Hero = () => {
       alt="Hero image"
       className="w-full h-full object-cover opacity-40"
       />
-    <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"/>
+    <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background"/>
     </div>
     {/* Green Dots */}
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -57,7 +57,7 @@ export const Hero = () => {
         <div className="animate-fade-in">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
           <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            Software Engineer • Data Analyst
+            Software Engineer • Machine Learning
         </span>
         </div>
 
@@ -78,13 +78,23 @@ export const Hero = () => {
         </div>
         {/* CTAs */}
          <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="#contact">
+  <Button size="lg">
+    Contact Me <ArrowRight className="w-5 h-5" />
+  </Button>
+</a>
+
+<a
+  href="/Sudhanshu_Resume.pdf"
+  download
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <AnimatedBorderButton>
+    Download Resume
+  </AnimatedBorderButton>
+</a>
+
             </div>
 
         {/* Social Links */}
@@ -112,7 +122,7 @@ export const Hero = () => {
               to-primary/10 blur-2xl animate-pulse"
               />
           <div className="relative glass rounded-3xl p-4 glow-border">
-          <img src="sudhanshu.jpeg" alt="Sudhanshu Tiwari" className="w-full aspect-4/5 object-cover rounded-2xl" 
+          <img src="/sample.jpg" alt="Sudhanshu Tiwari" className="w-full aspect-4/5 object-cover rounded-2xl" 
           />
           {/* Floating Badge */}
           <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
@@ -160,13 +170,7 @@ export const Hero = () => {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 
       animate-fade-in animation-delay-800"
       >
-        <a
-          href="#about"
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
-        >
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
-          <ChevronDown className="w-6 h-6 animate-bounce" />
-        </a>
+        
     </div>
   </section>;
 };

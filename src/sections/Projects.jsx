@@ -1,13 +1,16 @@
-import { ArrowUpRight, Github } from "lucide-react";
+import { ArrowUpRight, Github, } from "lucide-react";
+
+
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
     title: "CyberGuard AI",
     description:
       "CyberGuard AI is an AI-powered, multi-agent cybersecurity assistant developed during a Google AI 5-day program and hosted on Kaggle. The project is designed to educate users about cybersecurity threats and secure coding practices through intelligent analysis and real-world simulations.",
-    image: "/projects/Screenshot 2026-01-24 211356.png",
+    image: "/projects/image.jpg",
     tags: ["Python, Multi-Agent AI, Google AI, Kaggle"],
     link: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
+    github: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
   },
   {
     title: "PhishShield AI",
@@ -63,7 +66,7 @@ export const Projects = () => {
                 />
                 <div
                   className="absolute inset-0 
-                bg-gradient-to-t from-card via-card/50
+                bg-linear-to-t from-card via-card/50
                  to-transparent opacity-60"
                 />
                 {/* Overlay Links */}
