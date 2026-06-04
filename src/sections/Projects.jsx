@@ -7,7 +7,7 @@ const projects = [
   title: "StockPulse: Stock Market Analysis & Prediction",
     description:
       "Developed a finance-focused data science project that analyzes historical stock market data to identify trends, patterns, and investment insights.",
-    image: "public/projects/ChatGPT Image Jun 4, 2026, 03_04_58 PM.png",
+    image: "/projects/ChatGPT Image Jun 4, 2026, 03_04_58 PM.png",
     tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
     link: "https://github.com/stiwari0223-ux/stockpulse-finance-project",
     github: "https://github.com/stiwari0223-ux/stockpulse-finance-project",
@@ -17,7 +17,7 @@ const projects = [
   title: "Student Placement Prediction System",
     description:
       "Built a machine learning model to predict student placement outcomes based on academic performance, skills, and other relevant factors.",
-    image: "public/projects/ChatGPT Image Jun 4, 2026, 03_03_06 PM.png",
+    image: "/projects/ChatGPT Image Jun 4, 2026, 03_03_06 PM.png",
     tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
     link: "https://github.com/stiwari0223-ux/Student-Placement-Prediction-using-Machine-Learning",
     github: "https://github.com/stiwari0223-ux/Student-Placement-Prediction-using-Machine-Learning",
@@ -44,7 +44,7 @@ const projects = [
     title: "CyberGuard AI",
     description:
       "CyberGuard AI is an AI-powered, multi-agent cybersecurity assistant developed during a Google AI 5-day program and hosted on Kaggle. The project is designed to educate users about cybersecurity threats and secure coding practices through intelligent analysis and real-world simulations.",
-    image: "/public/projects/Screenshot 2026-06-04 145548.png",
+    image: "/projects/Screenshot 2026-06-04 145548.png",
     tags: ["Python, Multi-Agent AI, Google AI, Kaggle"],
     link: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
     github: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
