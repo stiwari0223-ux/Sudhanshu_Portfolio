@@ -28,8 +28,8 @@ const projects = [
       "Collaborated in a team to develop MediCard, a healthcare analytics platform that leverages machine learning and data analysis to assess patient health data and predict potential medical conditions.",
     image: "/projects/project2.png",
     tags: ["HTML", "CSS", "JavaScript", "Python"],
-    link: "#",
-    github: "#",
+    link: "https://github.com/sujeet-01/MediCard",
+    github: "https://github.com/sujeet-01/MediCard",
   },
   {
     title: "PhishShield AI",
