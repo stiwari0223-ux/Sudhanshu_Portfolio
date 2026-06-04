@@ -1,39 +1,21 @@
-import React from "react";
-
 const experiences = [
   {
     period: "May 2026 — June 2026",
-    role: "Data Science Intern",
+    role: "Data science Intern",
     company: "Thiranex",
     description:
       "Worked on a real-world finance analytics project involving stock market data analysis and prediction. Applied data science and machine learning techniques to uncover trends, visualize market behavior, and build predictive models for stock price forecasting. Developed skills in data preprocessing, feature engineering, statistical analysis, and financial data visualization.",
-    technologies: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "Seaborn",
-      "Scikit-learn",
-      "Jupyter Notebook",
-      "Machine Learning",
-      "Data Visualization",
-      "Exploratory Data Analysis (EDA)",
-    ],
-    current: false,
-  },
+    technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning", "Data Visualization", "Exploratory Data Analysis (EDA)"],
+    current: true,
+  }, 
   {
     period: "May 2026 — Present",
     role: "Open Source Contributor (GSSoC)",
-    company: "GirlScript Summer of Code",
+    company: "Digital Solutions Co.",
     description:
       "Contributed to open-source projects under GirlScript Summer of Code (GSSoC), collaborating with maintainers and developers to improve project functionality, fix issues, implement features, and enhance documentation. Gained hands-on experience with Git, GitHub, collaborative development workflows, and real-world software engineering practices.",
-    technologies: [
-      "Git",
-      "GitHub",
-      "Open Source Development",
-      "Python",
-    ],
-    current: true,
+    technologies: ["Git","GitHub", "Open Source Development", "Python"],
+    current: false,
   },
 ];
 
@@ -42,7 +24,7 @@ export const Experience = () => {
     <section id="experience" className="py-32 relative overflow-hidden">
       <div
         className="absolute top-1/2 left-1/4 w-96
-        h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
+       h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"
       />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -50,29 +32,28 @@ export const Experience = () => {
         <div className="max-w-3xl mb-16">
           <span
             className="text-secondary-foreground text-sm
-            font-medium tracking-wider uppercase animate-fade-in"
+           font-medium tracking-wider uppercase animate-fade-in"
           >
             Career Journey
           </span>
-
           <h2
             className="text-4xl md:text-5xl font-bold
-            mt-4 mb-6 animate-fade-in animation-delay-100
+           mt-4 mb-6 animate-fade-in animation-delay-100
             text-secondary-foreground"
           >
             Experience that{" "}
             <span className="font-serif italic font-normal text-white">
+              {" "}
               speaks volumes.
             </span>
           </h2>
 
           <p
             className="text-muted-foreground
-            animate-fade-in animation-delay-200"
+           animate-fade-in animation-delay-200"
           >
-            From solving coding challenges to building impactful projects,
-            exploring machine learning, open source, cybersecurity, and
-            full-stack development along the way.
+           From solving coding challenges to building impactful projects, exploring machine learning, 
+             open source, cybersecurity, and full-stack development along the way.
           </p>
         </div>
 
@@ -103,21 +84,17 @@ export const Experience = () => {
                       : "md:col-start-2 md:pl-16"
                   }`}
                 >
-                  <div className="glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500">
+                  <div
+                    className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
+                  >
                     <span className="text-sm text-primary font-medium">
                       {exp.period}
                     </span>
-
-                    <h3 className="text-xl font-semibold mt-2">
-                      {exp.role}
-                    </h3>
-
+                    <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
                     <p className="text-muted-foreground">{exp.company}</p>
-
                     <p className="text-sm text-muted-foreground mt-4">
                       {exp.description}
                     </p>
-
                     <div
                       className={`flex flex-wrap gap-2 mt-4 ${
                         idx % 2 === 0 ? "md:justify-end" : ""
