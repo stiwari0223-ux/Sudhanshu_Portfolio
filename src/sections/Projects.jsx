@@ -9,8 +9,8 @@ const projects = [
       "Developed a finance-focused data science project that analyzes historical stock market data to identify trends, patterns, and investment insights.",
     image: "/projects/project2.png",
     tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
-    link: "#",
-    github: "#",
+    link: "https://github.com/stiwari0223-ux/stockpulse-finance-project",
+    github: "https://github.com/stiwari0223-ux/stockpulse-finance-project",
   },
 
   {
