@@ -4,13 +4,32 @@ import { ArrowUpRight, Github, } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "CyberGuard AI",
+  title: "StockPulse: Stock Market Analysis & Prediction",
     description:
-      "CyberGuard AI is an AI-powered, multi-agent cybersecurity assistant developed during a Google AI 5-day program and hosted on Kaggle. The project is designed to educate users about cybersecurity threats and secure coding practices through intelligent analysis and real-world simulations.",
-    image: "/projects/image.jpg",
-    tags: ["Python, Multi-Agent AI, Google AI, Kaggle"],
-    link: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
-    github: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
+      "Developed a finance-focused data science project that analyzes historical stock market data to identify trends, patterns, and investment insights.",
+    image: "/projects/project2.png",
+    tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
+    link: "#",
+    github: "#",
+  },
+
+  {
+  title: "Student Placement Prediction System",
+    description:
+      "Built a machine learning model to predict student placement outcomes based on academic performance, skills, and other relevant factors.",
+    image: "/projects/project2.png",
+    tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
+    link: "#",
+    github: "#",
+  },
+  {
+  title: "MediCard: Healthcare Analytics & Disease Prediction (Team Project)",
+    description:
+      "Collaborated in a team to develop MediCard, a healthcare analytics platform that leverages machine learning and data analysis to assess patient health data and predict potential medical conditions.",
+    image: "/projects/project2.png",
+    tags: ["HTML", "CSS", "JavaScript", "Python"],
+    link: "#",
+    github: "#",
   },
   {
     title: "PhishShield AI",
@@ -20,6 +39,15 @@ const projects = [
     tags: ["React, Rust, JavaScript, HTML/CSS"],
     link: "https://github.com/stiwari0223-ux/PhishShield-AI",
     github: "https://github.com/stiwari0223-ux/PhishShield-AI",
+  },
+  {
+    title: "CyberGuard AI",
+    description:
+      "CyberGuard AI is an AI-powered, multi-agent cybersecurity assistant developed during a Google AI 5-day program and hosted on Kaggle. The project is designed to educate users about cybersecurity threats and secure coding practices through intelligent analysis and real-world simulations.",
+    image: "/projects/image.jpg",
+    tags: ["Python, Multi-Agent AI, Google AI, Kaggle"],
+    link: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
+    github: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
   },
   
 ];
