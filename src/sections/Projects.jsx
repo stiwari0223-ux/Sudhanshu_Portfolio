@@ -19,8 +19,8 @@ const projects = [
       "Built a machine learning model to predict student placement outcomes based on academic performance, skills, and other relevant factors.",
     image: "/projects/project2.png",
     tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
-    link: "#",
-    github: "#",
+    link: "https://github.com/stiwari0223-ux/Student-Placement-Prediction-using-Machine-Learning",
+    github: "https://github.com/stiwari0223-ux/Student-Placement-Prediction-using-Machine-Learning",
   },
   {
   title: "MediCard: Healthcare Analytics & Disease Prediction (Team Project)",
