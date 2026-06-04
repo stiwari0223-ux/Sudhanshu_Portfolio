@@ -7,7 +7,7 @@ const projects = [
   title: "StockPulse: Stock Market Analysis & Prediction",
     description:
       "Developed a finance-focused data science project that analyzes historical stock market data to identify trends, patterns, and investment insights.",
-    image: "/projects/project2.png",
+    image: "public/projects/ChatGPT Image Jun 4, 2026, 03_04_58 PM.png",
     tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
     link: "https://github.com/stiwari0223-ux/stockpulse-finance-project",
     github: "https://github.com/stiwari0223-ux/stockpulse-finance-project",
@@ -17,7 +17,7 @@ const projects = [
   title: "Student Placement Prediction System",
     description:
       "Built a machine learning model to predict student placement outcomes based on academic performance, skills, and other relevant factors.",
-    image: "/projects/project2.png",
+    image: "public/projects/ChatGPT Image Jun 4, 2026, 03_03_06 PM.png",
     tags: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook", "Machine Learning"],
     link: "https://github.com/stiwari0223-ux/Student-Placement-Prediction-using-Machine-Learning",
     github: "https://github.com/stiwari0223-ux/Student-Placement-Prediction-using-Machine-Learning",
@@ -26,7 +26,7 @@ const projects = [
   title: "MediCard: Healthcare Analytics & Disease Prediction (Team Project)",
     description:
       "Collaborated in a team to develop MediCard, a healthcare analytics platform that leverages machine learning and data analysis to assess patient health data and predict potential medical conditions.",
-    image: "/projects/project2.png",
+    image: "public/projects/Screenshot 2026-04-25 003433.png",
     tags: ["HTML", "CSS", "JavaScript", "Python"],
     link: "https://github.com/sujeet-01/MediCard",
     github: "https://github.com/sujeet-01/MediCard",
