@@ -26,7 +26,7 @@ const projects = [
   title: "MediCard: Healthcare Analytics & Disease Prediction (Team Project)",
     description:
       "Collaborated in a team to develop MediCard, a healthcare analytics platform that leverages machine learning and data analysis to assess patient health data and predict potential medical conditions.",
-    image: "public/projects/Screenshot 2026-04-25 003433.png",
+    image: "/projects/Screenshot 2026-04-25 003433.png",
     tags: ["HTML", "CSS", "JavaScript", "Python"],
     link: "https://github.com/sujeet-01/MediCard",
     github: "https://github.com/sujeet-01/MediCard",
