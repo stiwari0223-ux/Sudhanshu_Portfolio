@@ -44,7 +44,7 @@ const projects = [
     title: "CyberGuard AI",
     description:
       "CyberGuard AI is an AI-powered, multi-agent cybersecurity assistant developed during a Google AI 5-day program and hosted on Kaggle. The project is designed to educate users about cybersecurity threats and secure coding practices through intelligent analysis and real-world simulations.",
-    image: "/projects/image.jpg",
+    image: "/public/projects/Screenshot 2026-06-04 145548.png",
     tags: ["Python, Multi-Agent AI, Google AI, Kaggle"],
     link: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
     github: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
