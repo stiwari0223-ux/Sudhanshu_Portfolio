@@ -11,7 +11,7 @@ const experiences = [
   {
     period: "May 2026 — Present",
     role: "Open Source Contributor (GSSoC)",
-    company: "Digital Solutions Co.",
+    company: "GirlScript Summer of Code",
     description:
       "Contributed to open-source projects under GirlScript Summer of Code (GSSoC), collaborating with maintainers and developers to improve project functionality, fix issues, implement features, and enhance documentation. Gained hands-on experience with Git, GitHub, collaborative development workflows, and real-world software engineering practices.",
     technologies: ["Git","GitHub", "Open Source Development", "Python"],
