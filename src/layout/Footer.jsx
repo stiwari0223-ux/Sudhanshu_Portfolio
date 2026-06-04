@@ -8,6 +8,7 @@ const socialLinks = [
 const footerLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -21,7 +22,7 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              Sudhanshu Tiwari<span className="text-primary">.</span>
+              Sudhanshu Tiwari<span className="text-primary"></span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} Sudhanshu Tiwari. All rights reserved.
