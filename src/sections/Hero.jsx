@@ -21,6 +21,7 @@ const skills = [
   "Tailwind CSS",
   "Figma",
   "Git",
+  "JupyterNotebook",
 ];
 
 
