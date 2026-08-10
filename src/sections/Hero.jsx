@@ -123,7 +123,7 @@ export const Hero = () => {
               to-primary/10 blur-2xl animate-pulse"
               />
           <div className="relative glass rounded-3xl p-4 glow-border">
-          <img src="/sample.jpg" alt="Sudhanshu Tiwari" className="w-full aspect-4/5 object-cover rounded-2xl" 
+          <img src="/profile-photo.jpeg" alt="Sudhanshu Tiwari" className="w-full aspect-4/5 object-cover rounded-2xl" 
           />
           {/* Floating Badge */}
           <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
