@@ -9,7 +9,7 @@ const experiences = [
     current: true,
   }, 
   {
-    period: "May 2026 — Present",
+    period: "May 2026 — June 2026",
     role: "Open Source Contributor (GSSoC)",
     company: "GirlScript Summer of Code",
     description:
