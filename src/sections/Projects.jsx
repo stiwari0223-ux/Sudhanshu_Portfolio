@@ -32,9 +32,9 @@ const projects = [
     github: "https://github.com/sujeet-01/MediCard",
   },
   {
-    title: "PhishShield AI",
+    title: "PhishGuard",
     description:
-      "PhishShield AI is a client-based AI-powered phishing detection system designed to identify potentially malicious websites by analyzing URL characteristics and network indicators. The project focuses on real-time threat detection without backend dependency, making it lightweight, fast, and privacy-friendly.",
+      "PhishGuard is a client-based AI-powered phishing detection system designed to identify potentially malicious websites by analyzing URL characteristics and network indicators. The project focuses on real-time threat detection without backend dependency, making it lightweight, fast, and privacy-friendly.",
     image: "/projects/project2.jpeg",
     tags: ["React, Rust, JavaScript, HTML/CSS"],
     link: "https://phishguard-kappa.vercel.app/",
