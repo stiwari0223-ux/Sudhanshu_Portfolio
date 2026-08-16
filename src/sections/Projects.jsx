@@ -44,7 +44,7 @@ const projects = [
     title: "DataVoyage-Titanic-EDA-Project",
     description:
       "DataVoyage – Titanic EDA is a data analysis project that explores the Titanic dataset to uncover patterns in passenger survival based on factors such as age, gender, passenger class, and fare. It uses Python, Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, exploratory analysis, and visualization.",
-    image: "public/projects/ChatGPT Image Aug 16, 2026, 01_12_18 PM.png",
+    image: "/projects/ChatGPT Image Aug 16, 2026, 01_12_18 PM.png",
     tags: ["Python, Pandas, NumPy, Matplotlib, Seaborn, EDA, Data Analysis, Data Visualization, Titanic Dataset"],
     link: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
     github: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
