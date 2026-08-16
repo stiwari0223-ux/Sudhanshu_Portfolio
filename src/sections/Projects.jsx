@@ -41,9 +41,9 @@ const projects = [
     github: "https://github.com/stiwari0223-ux/PhishShield-AI",
   },
   {
-    title: "CyberGuard AI",
+    title: "DataVoyage-Titanic-EDA-Project",
     description:
-      "CyberGuard AI is an AI-powered, multi-agent cybersecurity assistant developed during a Google AI 5-day program and hosted on Kaggle. The project is designed to educate users about cybersecurity threats and secure coding practices through intelligent analysis and real-world simulations.",
+      "DataVoyage – Titanic EDA is a data analysis project that explores the Titanic dataset to uncover patterns in passenger survival based on factors such as age, gender, passenger class, and fare. It uses Python, Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, exploratory analysis, and visualization.",
     image: "/projects/Screenshot 2026-06-04 145548.png",
     tags: ["Python, Multi-Agent AI, Google AI, Kaggle"],
     link: "https://www.kaggle.com/code/sudhanshutiwari2006/cyberedugen-personalized-learning-with-ai-agents",
