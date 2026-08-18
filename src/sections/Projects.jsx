@@ -118,6 +118,7 @@ const projects = [
 export const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
+  // Show 2 projects initially, all projects after clicking View All
   const visibleProjects = showAll
     ? projects
     : projects.slice(0, 2);
@@ -205,7 +206,7 @@ export const Projects = () => {
                   "
                 />
 
-                {/* Overlay Links */}
+                {/* Project / GitHub Links */}
                 <div
                   className="
                     absolute
@@ -266,10 +267,10 @@ export const Projects = () => {
 
               </div>
 
-              {/* Content */}
+              {/* Project Content */}
               <div className="p-6 space-y-4">
 
-                {/* Title */}
+                {/* Project Title */}
                 <div className="flex items-start justify-between">
 
                   <h3
@@ -340,14 +341,27 @@ export const Projects = () => {
 
         </div>
 
-        {/* View All CTA */}
-        <div className="text-center mt-12 animate-fade-in animation-delay-500">
+        {/* ==================================================
+            VIEW ALL PROJECTS
+            AnimatedBorderButton is unchanged
+           ================================================== */}
 
-          <AnimatedBorderButton
-            onClick={() => setShowAll((prev) => !prev)}
-          >
+        <div
+          className="
+            text-center
+            mt-12
+            animate-fade-in
+            animation-delay-500
+            cursor-pointer
+          "
+          onClick={() => setShowAll((prev) => !prev)}
+        >
 
-            {showAll ? "Show Less" : "View All Projects"}
+          <AnimatedBorderButton>
+
+            {showAll
+              ? "Show Less"
+              : "View All Projects"}
 
             {showAll ? (
               <ChevronUp className="w-5 h-5" />
