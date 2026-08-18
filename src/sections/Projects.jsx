@@ -23,9 +23,9 @@ const projects = [
     github: "https://github.com/stiwari0223-ux/Student-Placement-Prediction-using-Machine-Learning",
   },
   {
-  title: "MediCard: Healthcare Analytics & Disease Prediction (Team Project)",
+  title: "sales-data-cleaning-visualization",
     description:
-      "Collaborated in a team to develop MediCard, a healthcare analytics platform that leverages machine learning and data analysis to assess patient health data and predict potential medical conditions.",
+      "Sales Data Cleaning & Visualization is a data analysis project focused on cleaning, processing, and visualizing sales data to identify trends, patterns, and business insights. It uses Python, Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, EDA, and visualization.",
     image: "/projects/Screenshot 2026-04-25 003433.png",
     tags: ["HTML", "CSS", "JavaScript", "Python"],
     link: "https://github.com/sujeet-01/MediCard",
