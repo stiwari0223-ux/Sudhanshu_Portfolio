@@ -6,8 +6,6 @@ import {
   ChevronUp,
 } from "lucide-react";
 
-import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
-
 const projects = [
   {
     title: "StockPulse: Stock Market Analysis & Prediction",
@@ -116,6 +114,7 @@ const projects = [
 export const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
+  // Initially show only 2 projects
   const visibleProjects = showAll
     ? projects
     : projects.slice(0, 2);
@@ -176,6 +175,7 @@ export const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
 
+                {/* Image Overlay */}
                 <div
                   className="
                     absolute inset-0
@@ -187,7 +187,7 @@ export const Projects = () => {
                   "
                 />
 
-                {/* Project / GitHub Links */}
+                {/* Links */}
                 <div
                   className="
                     absolute inset-0
@@ -196,8 +196,6 @@ export const Projects = () => {
                     md:opacity-0
                     md:group-hover:opacity-100
                     transition-opacity duration-300
-                    pointer-events-none
-                    md:pointer-events-auto
                   "
                 >
 
@@ -215,9 +213,8 @@ export const Projects = () => {
                       hover:bg-primary
                       hover:text-primary-foreground
                       transition-all
-                      pointer-events-auto
-                      touch-manipulation
                       cursor-pointer
+                      touch-manipulation
                     "
                   >
                     <ArrowUpRight className="w-5 h-5" />
@@ -237,16 +234,14 @@ export const Projects = () => {
                       hover:bg-primary
                       hover:text-primary-foreground
                       transition-all
-                      pointer-events-auto
-                      touch-manipulation
                       cursor-pointer
+                      touch-manipulation
                     "
                   >
                     <Github className="w-5 h-5" />
                   </a>
 
                 </div>
-
               </div>
 
               {/* Content */}
@@ -315,11 +310,33 @@ export const Projects = () => {
 
         </div>
 
-        {/* View All / Show Less */}
+        {/* View All / Show Less Button */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
 
-          <AnimatedBorderButton
+          <button
+            type="button"
             onClick={() => setShowAll((prev) => !prev)}
+            className="
+              inline-flex
+              items-center
+              gap-2
+              px-6
+              py-3
+              rounded-full
+              border
+              border-primary/50
+              bg-surface
+              text-sm
+              font-medium
+              text-foreground
+              hover:bg-primary
+              hover:text-primary-foreground
+              hover:border-primary
+              transition-all
+              duration-300
+              cursor-pointer
+              touch-manipulation
+            "
           >
 
             {showAll ? "Show Less" : "View All Projects"}
@@ -330,7 +347,7 @@ export const Projects = () => {
               <ChevronDown className="w-5 h-5" />
             )}
 
-          </AnimatedBorderButton>
+          </button>
 
         </div>
 
