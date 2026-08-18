@@ -114,7 +114,6 @@ const projects = [
 export const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
-  // Show only first 2 projects initially
   const visibleProjects = showAll
     ? projects
     : projects.slice(0, 2);
@@ -160,7 +159,14 @@ export const Projects = () => {
 
             <div
               key={project.title}
-              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
+              className="
+                group
+                glass
+                rounded-2xl
+                overflow-hidden
+                animate-fade-in
+                md:row-span-1
+              "
               style={{
                 animationDelay: `${(idx + 1) * 100}ms`,
               }}
@@ -172,13 +178,21 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="
+                    w-full
+                    h-full
+                    object-cover
+                    transition-transform
+                    duration-700
+                    group-hover:scale-110
+                  "
                 />
 
                 {/* Image Overlay */}
                 <div
                   className="
-                    absolute inset-0
+                    absolute
+                    inset-0
                     bg-linear-to-t
                     from-card
                     via-card/50
@@ -187,15 +201,20 @@ export const Projects = () => {
                   "
                 />
 
-                {/* Project / GitHub Links */}
+                {/* Links */}
                 <div
                   className="
-                    absolute inset-0
-                    flex items-center justify-center gap-4
+                    absolute
+                    inset-0
+                    flex
+                    items-center
+                    justify-center
+                    gap-4
                     opacity-100
                     md:opacity-0
                     md:group-hover:opacity-100
-                    transition-opacity duration-300
+                    transition-opacity
+                    duration-300
                   "
                 >
 
@@ -245,19 +264,27 @@ export const Projects = () => {
 
               </div>
 
-              {/* Content */}
+              {/* Project Content */}
               <div className="p-6 space-y-4">
 
-                {/* Project Title */}
+                {/* Title */}
                 <div className="flex items-start justify-between">
 
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                  <h3
+                    className="
+                      text-xl
+                      font-semibold
+                      group-hover:text-primary
+                      transition-colors
+                    "
+                  >
                     {project.title}
                   </h3>
 
                   <ArrowUpRight
                     className="
-                      w-5 h-5
+                      w-5
+                      h-5
                       text-muted-foreground
                       group-hover:text-primary
                       group-hover:translate-x-1
@@ -311,22 +338,47 @@ export const Projects = () => {
 
         </div>
 
-        {/* Animated View All Button */}
-        <div className="text-center mt-12 animate-fade-in animation-delay-500">
+        {/* ==================================================
+            ANIMATED VIEW ALL BUTTON
+           ================================================== */}
 
-          <div className="relative inline-flex rounded-full p-[1px] overflow-hidden">
+        <div className="text-center mt-12">
 
-            {/* Animated Border */}
+          <div
+            className="
+              relative
+              inline-flex
+              items-center
+              justify-center
+              rounded-full
+              p-[2px]
+              overflow-hidden
+            "
+          >
+
+            {/* Rotating Animated Border */}
             <div
               className="
                 absolute
-                inset-[-100%]
+                w-[250%]
+                h-[250%]
                 animate-[spin_3s_linear_infinite]
-                bg-[conic-gradient(from_90deg,transparent_0%,hsl(var(--primary))_20%,transparent_40%,transparent_60%,hsl(var(--highlight))_80%,transparent_100%)]
+                bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,#22c55e_140deg,#4ade80_180deg,transparent_220deg,transparent_360deg)]
               "
             />
 
-            {/* Button */}
+            {/* Static Dark Border */}
+            <div
+              className="
+                absolute
+                inset-0
+                rounded-full
+                border
+                border-white/10
+              "
+            />
+
+            {/* Actual Button */}
             <button
               type="button"
               onClick={() => setShowAll((prev) => !prev)}
@@ -337,23 +389,26 @@ export const Projects = () => {
                 items-center
                 justify-center
                 gap-2
-                px-6
+                px-7
                 py-3
                 rounded-full
-                bg-background
+                bg-[#0a0a0a]
+                text-white
                 text-sm
                 font-medium
-                text-foreground
-                hover:bg-background
-                hover:text-primary
                 transition-all
                 duration-300
+                hover:bg-[#111111]
+                hover:text-white
+                active:scale-95
                 cursor-pointer
                 touch-manipulation
               "
             >
 
-              {showAll ? "Show Less" : "View All Projects"}
+              {showAll
+                ? "Show Less"
+                : "View All Projects"}
 
               {showAll ? (
                 <ChevronUp className="w-5 h-5" />
