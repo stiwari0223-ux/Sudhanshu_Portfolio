@@ -114,7 +114,7 @@ const projects = [
 export const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
-  // Initially show only 2 projects
+  // Show only first 2 projects initially
   const visibleProjects = showAll
     ? projects
     : projects.slice(0, 2);
@@ -187,7 +187,7 @@ export const Projects = () => {
                   "
                 />
 
-                {/* Links */}
+                {/* Project / GitHub Links */}
                 <div
                   className="
                     absolute inset-0
@@ -242,12 +242,13 @@ export const Projects = () => {
                   </a>
 
                 </div>
+
               </div>
 
               {/* Content */}
               <div className="p-6 space-y-4">
 
-                {/* Title */}
+                {/* Project Title */}
                 <div className="flex items-start justify-between">
 
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
@@ -310,44 +311,59 @@ export const Projects = () => {
 
         </div>
 
-        {/* View All / Show Less Button */}
+        {/* Animated View All Button */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
 
-          <button
-            type="button"
-            onClick={() => setShowAll((prev) => !prev)}
-            className="
-              inline-flex
-              items-center
-              gap-2
-              px-6
-              py-3
-              rounded-full
-              border
-              border-primary/50
-              bg-surface
-              text-sm
-              font-medium
-              text-foreground
-              hover:bg-primary
-              hover:text-primary-foreground
-              hover:border-primary
-              transition-all
-              duration-300
-              cursor-pointer
-              touch-manipulation
-            "
-          >
+          <div className="relative inline-flex rounded-full p-[1px] overflow-hidden">
 
-            {showAll ? "Show Less" : "View All Projects"}
+            {/* Animated Border */}
+            <div
+              className="
+                absolute
+                inset-[-100%]
+                animate-[spin_3s_linear_infinite]
+                bg-[conic-gradient(from_90deg,transparent_0%,hsl(var(--primary))_20%,transparent_40%,transparent_60%,hsl(var(--highlight))_80%,transparent_100%)]
+              "
+            />
 
-            {showAll ? (
-              <ChevronUp className="w-5 h-5" />
-            ) : (
-              <ChevronDown className="w-5 h-5" />
-            )}
+            {/* Button */}
+            <button
+              type="button"
+              onClick={() => setShowAll((prev) => !prev)}
+              className="
+                relative
+                z-10
+                inline-flex
+                items-center
+                justify-center
+                gap-2
+                px-6
+                py-3
+                rounded-full
+                bg-background
+                text-sm
+                font-medium
+                text-foreground
+                hover:bg-background
+                hover:text-primary
+                transition-all
+                duration-300
+                cursor-pointer
+                touch-manipulation
+              "
+            >
 
-          </button>
+              {showAll ? "Show Less" : "View All Projects"}
+
+              {showAll ? (
+                <ChevronUp className="w-5 h-5" />
+              ) : (
+                <ChevronDown className="w-5 h-5" />
+              )}
+
+            </button>
+
+          </div>
 
         </div>
 
