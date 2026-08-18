@@ -35,7 +35,7 @@ const projects = [
     title: "PhishGuard",
     description:
       "PhishGuard is a client-based AI-powered phishing detection system designed to identify potentially malicious websites by analyzing URL characteristics and network indicators. The project focuses on real-time threat detection without backend dependency, making it lightweight, fast, and privacy-friendly.",
-    image: "/projects/project2.jpeg",
+    image: "/projects/Screenshot 2026-06-04 145548.pngg",
     tags: ["React, Rust, JavaScript, HTML/CSS"],
     link: "https://phishguard-kappa.vercel.app/",
     github: "https://github.com/stiwari0223-ux/PhishShield-AI",
