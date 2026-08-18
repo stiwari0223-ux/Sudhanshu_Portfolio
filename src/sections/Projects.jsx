@@ -6,6 +6,8 @@ import {
   ChevronUp,
 } from "lucide-react";
 
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const projects = [
   {
     title: "StockPulse: Stock Market Analysis & Prediction",
@@ -22,7 +24,8 @@ const projects = [
       "Jupyter Notebook",
       "Machine Learning",
     ],
-    link: "https://github.com/stiwari0223-ux/stockpulse-finance-project",
+    link:
+      "https://github.com/stiwari0223-ux/stockpulse-finance-project",
     github:
       "https://github.com/stiwari0223-ux/stockpulse-finance-project",
   },
@@ -49,7 +52,7 @@ const projects = [
   },
 
   {
-    title: "Sales Data Cleaning & Visualization",
+    title: "sales-data-cleaning-visualization",
     description:
       "Sales Data Cleaning & Visualization is a data analysis project focused on cleaning, processing, and visualizing sales data to identify trends, patterns, and business insights. It uses Python, Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, EDA, and visualization.",
     image:
@@ -82,7 +85,8 @@ const projects = [
       "JavaScript",
       "HTML/CSS",
     ],
-    link: "https://phishguard-kappa.vercel.app/",
+    link:
+      "https://phishguard-kappa.vercel.app/",
     github:
       "https://github.com/stiwari0223-ux/PhishShield-AI",
   },
@@ -201,7 +205,7 @@ export const Projects = () => {
                   "
                 />
 
-                {/* Links */}
+                {/* Overlay Links */}
                 <div
                   className="
                     absolute
@@ -228,7 +232,6 @@ export const Projects = () => {
                       p-3
                       rounded-full
                       glass
-                      bg-background/80
                       hover:bg-primary
                       hover:text-primary-foreground
                       transition-all
@@ -249,7 +252,6 @@ export const Projects = () => {
                       p-3
                       rounded-full
                       glass
-                      bg-background/80
                       hover:bg-primary
                       hover:text-primary-foreground
                       transition-all
@@ -264,7 +266,7 @@ export const Projects = () => {
 
               </div>
 
-              {/* Project Content */}
+              {/* Content */}
               <div className="p-6 space-y-4">
 
                 {/* Title */}
@@ -338,87 +340,22 @@ export const Projects = () => {
 
         </div>
 
-        {/* ==================================================
-            ANIMATED VIEW ALL BUTTON
-           ================================================== */}
+        {/* View All CTA */}
+        <div className="text-center mt-12 animate-fade-in animation-delay-500">
 
-        <div className="text-center mt-12">
-
-          <div
-            className="
-              relative
-              inline-flex
-              items-center
-              justify-center
-              rounded-full
-              p-[2px]
-              overflow-hidden
-            "
+          <AnimatedBorderButton
+            onClick={() => setShowAll((prev) => !prev)}
           >
 
-            {/* Rotating Animated Border */}
-            <div
-              className="
-                absolute
-                w-[250%]
-                h-[250%]
-                animate-[spin_3s_linear_infinite]
-                bg-[conic-gradient(from_0deg,transparent_0deg,transparent_100deg,#22c55e_140deg,#4ade80_180deg,transparent_220deg,transparent_360deg)]
-              "
-            />
+            {showAll ? "Show Less" : "View All Projects"}
 
-            {/* Static Dark Border */}
-            <div
-              className="
-                absolute
-                inset-0
-                rounded-full
-                border
-                border-white/10
-              "
-            />
+            {showAll ? (
+              <ChevronUp className="w-5 h-5" />
+            ) : (
+              <ChevronDown className="w-5 h-5" />
+            )}
 
-            {/* Actual Button */}
-            <button
-              type="button"
-              onClick={() => setShowAll((prev) => !prev)}
-              className="
-                relative
-                z-10
-                inline-flex
-                items-center
-                justify-center
-                gap-2
-                px-7
-                py-3
-                rounded-full
-                bg-[#0a0a0a]
-                text-white
-                text-sm
-                font-medium
-                transition-all
-                duration-300
-                hover:bg-[#111111]
-                hover:text-white
-                active:scale-95
-                cursor-pointer
-                touch-manipulation
-              "
-            >
-
-              {showAll
-                ? "Show Less"
-                : "View All Projects"}
-
-              {showAll ? (
-                <ChevronUp className="w-5 h-5" />
-              ) : (
-                <ChevronDown className="w-5 h-5" />
-              )}
-
-            </button>
-
-          </div>
+          </AnimatedBorderButton>
 
         </div>
 
