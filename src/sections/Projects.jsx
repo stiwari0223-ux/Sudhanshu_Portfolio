@@ -26,8 +26,8 @@ const projects = [
   title: "sales-data-cleaning-visualization",
     description:
       "Sales Data Cleaning & Visualization is a data analysis project focused on cleaning, processing, and visualizing sales data to identify trends, patterns, and business insights. It uses Python, Pandas, NumPy, Matplotlib, and Seaborn for data cleaning, EDA, and visualization.",
-    image: "/projects/Screenshot 2026-04-25 003433.png",
-    tags: ["HTML", "CSS", "JavaScript", "Python"],
+    image: "/projects/ChatGPT Image Aug 18, 2026, 08_11_08 PM.png",
+    tags: ["Python, Pandas, NumPy, Matplotlib, Seaborn, Data Cleaning, EDA, Data Visualization, Sales Analysis"],
     link: "https://github.com/sujeet-01/MediCard",
     github: "https://github.com/sujeet-01/MediCard",
   },
