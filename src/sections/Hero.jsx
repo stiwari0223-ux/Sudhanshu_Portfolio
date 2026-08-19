@@ -86,7 +86,7 @@ export const Hero = () => {
 </a>
 
 <a
-  href="public/Sudhanshu_resume.pdf"
+  href="/Sudhanshu_resume.pdf"
   download
   target="_blank"
   rel="noopener noreferrer"
